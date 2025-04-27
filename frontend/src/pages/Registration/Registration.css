@@ -1,0 +1,43 @@
+.mainContainer {
+    background-color: #444444;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 32%;
+}
+
+.input-field input {
+    border: 2px solid #8c948e;
+    padding: 18px 18px;
+    margin-bottom: 24px;
+}
+
+.submit-button {
+    display: flex;
+}
+
+.submit-button button {
+    color: white;
+    border-radius: 8px;
+    border: 2px solid #8c948e;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin: auto;
+    background-color: #444444;
+    padding: 8px 16px;
+    margin-left: auto;
+}
+
+.submit-button button:hover {
+    background-color: #2f528f;
+}
+
+.submit-button button:focus {
+    outline: none;
+}
+
+.submit-button button:active {
+    background-color: #7a7b7b;
+}
