@@ -35,6 +35,7 @@
 }
 
 .submit-button button:focus {
+    background-color: #2f528f;
     outline: none;
 }
 
