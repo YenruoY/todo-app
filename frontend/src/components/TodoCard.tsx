@@ -2,6 +2,8 @@ import React from 'react';
 import './TodoCard.css'
 import EditButton from "../assets/edit-4-svgrepo-com.svg"
 import DeleteButton from "../assets/delete-svgrepo-com.svg"
+import GreenCheckIcon from "../assets/accept-check-good-mark-ok-tick-svgrepo-com.svg"
+import UncheckIcon from "../assets/tick-circle-svgrepo-com.svg"
 
 
 interface Todo {
@@ -27,8 +29,8 @@ const TodoCard: React.FC<TodoCardProps> = ({ todo, onEdit, onDelete, onComplete 
         <button onClick={() => onComplete(todo)}>
           {
             todo.status == 'inc' ?
-              <img src={DeleteButton} alt={todo.status} width={32} /> :
-              <img src={EditButton} alt={todo.status} width={32} />
+              <img src={UncheckIcon} alt={todo.status} width={32} /> :
+              <img src={GreenCheckIcon} alt={todo.status} width={32} />
           }
         </button>
       </div>
